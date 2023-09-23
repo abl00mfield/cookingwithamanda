@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(253, 252, 253);
+
+
+    color: rgb(8, 8, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1 {
+    color: rgb(10, 10, 10);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+}
+
+ol {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    background-color: #96D4D4;
+}
+
+.moms {
+    color: rgb(229, 55, 151)
+}
