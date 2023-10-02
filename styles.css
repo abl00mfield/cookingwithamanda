@@ -1,12 +1,59 @@
-body {
-    background-color: rgb(253, 252, 253);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+a {
+    text-decoration: none;
+}
 
-    color: rgb(8, 8, 8);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.navbar-container {
+    color: #fff;
+    background-color: #e1ac7a;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.navbar {
+
+    /* width: 900px;*/
+    justify-content: flex-end;
+    display: flex;
+    text-decoration: none;
 
 }
 
-ul {
-    text-decoration: none;
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #e1ac7a;
+
+    /* padding: 10px;*/
+}
+
+.navbar-item {
+    color: black;
+    display: flex;
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-page {
+    display: flex;
+    justify-content: space-between;
+    height: 800px;
+}
+
+.recipe-grid-container {
+    background-color: #919978;
+    flex: 2;
+}
+
+.menu-sidebar-container {
+    background-color: #95654b;
+    width: 200px;
+    flex: initial;
 }
