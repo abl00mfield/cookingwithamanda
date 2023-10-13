@@ -66,8 +66,8 @@ footer {
     grid-area: footer;
     background-color: #e1ac7a;
     height: 10vh;
-    font-size: 1em;
-    text-align: center;
+    font-size: .75em;
+
 
 }
 
@@ -75,7 +75,8 @@ footer {
 footer>a:link,
 footer>a:visited,
 footer>a:hover,
-footer>a:active {
+footer>a:active,
+footer>p {
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -129,6 +130,10 @@ aside {
 
 }
 
+.weeklyMenu>img {
+    width: 15vw;
+
+}
 
 nav {
     grid-area: nav;
@@ -139,6 +144,10 @@ nav {
     position: relative;
     text-align: center;
 
+}
+
+nav>img {
+    width: 10vw;
 }
 
 nav>a:link,
