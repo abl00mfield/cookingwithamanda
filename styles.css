@@ -5,34 +5,169 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a {
+a:link,
+a:visited {
     text-decoration: none;
+    color: black;
 }
 
-.navbar-container {
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav   main   aside"
+        "footer footer footer";
+
+    grid-template-columns: 15vw 1fr 20vw;
+    grid-template-rows: min-content auto-flow;
+}
+
+header {
+    grid-area: header;
+    background-color: #919978;
+    font-family: "Homemade Apple", Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    text-align: center;
+
+}
+
+.headerImg {
+    width: 20vw;
+}
+
+.logo {
+    font-family: "Homemade Apple";
+    font-size: 5vw;
+}
+
+.bottomText {
+    font-family: "Zen Loop";
+    text-transform: uppercase;
+    font-size: 2vw;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+
+}
+
+.headerItem {
+    padding: 10px;
+}
+
+.headerLogo {
+    height: 10vw;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: #e1ac7a;
+    height: 10vh;
+    font-size: .75em;
+
+}
+
+footer>a:link,
+footer>a:visited,
+footer>a:hover,
+footer>a:active {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    grid-area: main;
+    background-color: #95654b;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+
+
+
+}
+
+.categoryCard {
+    text-align: center;
+    border: black solid 2px;
+    height: fit-content;
+    display: flex;
+    padding: 8px;
+    line-height: 1.0;
+}
+
+.categoryCard>a {
+    /* font-family: "Shadows Into Light Two"; */
+    font-family: "Zen Loop";
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+.categoryImg {
+    height: 20vh;
+    padding: 15px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: aliceblue;
+    font-size: 5vw;
+    font-family: "Zen Loop";
+    font-weight: bold;
+    text-align: center;
+}
+
+.weeklyMenu>li {
+    font-size: 3.5vw;
+    font-family: "Zen Loop";
+    font-weight: normal;
+
+}
+
+
+nav {
+    grid-area: nav;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+/* .navbar-container {
     color: #fff;
     background-color: #e1ac7a;
     display: flex;
     justify-content: flex-end;
     padding: 10px;
-}
+} */
 
-.navbar {
+/* .navbar {
 
-    /* width: 900px;*/
-    justify-content: flex-end;
-    display: flex;
-    text-decoration: none;
+    width: 900px;
+justify-content: flex-end;
+display: flex;
+text-decoration: none;
 
-}
+} */
 
-.header {
+/* .header {
     display: flex;
     justify-content: center;
     background-color: #e1ac7a;
 
-    /* padding: 10px;*/
-}
+    /* padding: 10px;
+} 
 
 .navbar-item {
     color: black;
@@ -57,3 +192,5 @@ a {
     width: 200px;
     flex: initial;
 }
+
+*/
