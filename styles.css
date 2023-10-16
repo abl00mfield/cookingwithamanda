@@ -20,7 +20,7 @@ body {
         "footer footer footer";
 
     grid-template-columns: 15vw 1fr 20vw;
-    grid-template-rows: min-content auto-flow;
+    grid-template-rows: auto;
 }
 
 header {
@@ -28,7 +28,7 @@ header {
     background-color: #919978;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     text-align: center;
@@ -36,7 +36,7 @@ header {
 }
 
 .headerImg {
-    width: 20vw;
+    width: 15vw;
 }
 
 .logo {
@@ -88,7 +88,7 @@ main {
     background-color: #95654b;
     height: auto;
     display: flex;
-    padding: 20px;
+    /* padding: 20px; */
     gap: 10px;
     flex-wrap: wrap;
     justify-content: space-around;
