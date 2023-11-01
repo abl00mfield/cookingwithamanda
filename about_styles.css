@@ -22,10 +22,28 @@ body {
 main {
     grid-area: main;
     background-color: #E9E0B7;
-    font-size: 2vw;
     height: auto;
     padding: 20px;
     display: inline;
+    font-size: 2rem;
+}
+
+.mainImg {
+    width: 50%;
+    float: left;
+    display: inline;
+    padding: 10px;
+
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        font-size: 3vw;
+    }
+
+    .mainImg {
+        width: 30%;
+    }
 }
 
 main>div>p {
@@ -34,13 +52,5 @@ main>div>p {
 
 .mainText {
     display: inline;
-
-}
-
-.mainImg {
-    width: 30%;
-    float: left;
-    display: inline;
-    padding: 10px;
 
 }
