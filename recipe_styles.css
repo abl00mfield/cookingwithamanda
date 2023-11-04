@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Loop', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav   main   aside"
+        "footer footer footer";
+
+}
+
+main {
+    grid-area: main;
+    background-color: #95654b;
+    height: auto;
+    padding: 25px;
+    display: flex;
+    /* font-size: 2rem; */
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+main>h1 {
+    text-align: center;
+    font-family: 'Homemade Apple';
+    font-size: 2rem;
+    width: 100%;
+    line-height: 1.0;
+}
+
+.recipeCard {
+    text-align: center;
+    border: black solid 2px;
+    height: 225px;
+    width: 175px;
+    display: flex;
+    padding: 5px;
+    /* line-height: 1.0; */
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #E9E0B7;
+}
+
+.recipeCard>a {
+    /* text-transform: uppercase; */
+    font-size: 1.5em;
+}
+
+.recipeCard>a:hover {
+    color: #95654b;
+}
+
+.recipeImg {
+    height: 150px;
+    padding: 5px;
+    /* align-items: flex-end; */
+    align-self: flex-end;
+}
+
+.categoryList>li>a:hover {
+    background-color: #E9E0B7;
+}
+
+.categoryList>li {
+    font-size: 3.5vw;
+    font-weight: normal;
+
+}
+
+.categoryList>img {
+    width: 50%;
+
+}
+
+@media screen and (min-width: 600px) {
+
+    main>h1 {
+        font-size: 4vw;
+
+    }
+}

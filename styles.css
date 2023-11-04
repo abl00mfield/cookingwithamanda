@@ -16,8 +16,9 @@ body {
         "nav   main   aside"
         "footer footer footer";
 
-    grid-template-columns: 15% 3fr 20%;
-    grid-template-rows: auto-flow min-content;
+    grid-template-columns: 15% 1fr 20%;
+    grid-template-rows: min-content 1fr min-content;
+    height: 100vh;
 }
 
 header {
@@ -66,6 +67,7 @@ footer {
     font-size: .75em;
 
 
+
 }
 
 a:link,
@@ -90,7 +92,7 @@ main {
     background-color: #95654b;
     height: auto;
     display: flex;
-    /* padding: 20px; */
+    padding: 10px;
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
@@ -123,6 +125,7 @@ aside {
     font-size: 4vw;
     font-weight: bold;
     text-align: center;
+    padding: 8px;
 }
 
 .weeklyMenu>li {
@@ -132,7 +135,7 @@ aside {
 }
 
 .weeklyMenu>img {
-    width: 15vw;
+    width: 50%;
 
 }
 
@@ -148,12 +151,12 @@ nav {
 }
 
 .navBar>li>img {
-    width: 10vw;
+    width: 60%;
 }
 
 .navBar>li>a:link,
 .navBar>li>a:visited {
-    color: white;
+    color: antiquewhite;
 }
 
 .navBar>li>a:hover {
