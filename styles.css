@@ -114,6 +114,10 @@ main {
     font-size: 3vw;
 }
 
+.categoryCard>a:hover {
+    color: #904110;
+}
+
 .categoryImg {
     height: 150px;
     padding: 5px;
