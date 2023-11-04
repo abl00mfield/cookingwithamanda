@@ -19,7 +19,7 @@ main {
     background-color: #E9E0B7;
     height: auto;
     padding: 20px;
-    display: inline;
+    /* display: inline; */
     font-size: 2rem;
 
 }
@@ -28,13 +28,10 @@ main {
     list-style-type: disc;
 }
 
-.mainImg {
-    width: 50%;
-    float: left;
-    display: inline;
-    padding: 10px;
-
+.blogList>ul>li>a:hover {
+    color: #919978;
 }
+
 
 @media screen and (min-width: 600px) {
     main {
@@ -44,14 +41,4 @@ main {
     .mainImg {
         width: 30%;
     }
-}
-
-main>div>p {
-    padding: 10px;
-}
-
-.mainText {
-    display: inline;
-
-
 }
