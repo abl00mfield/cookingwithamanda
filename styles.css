@@ -126,11 +126,13 @@ aside {
     font-weight: bold;
     text-align: center;
     padding: 8px;
+    line-height: 1;
 }
 
 .weeklyMenu>li {
     font-size: 3.5vw;
     font-weight: normal;
+    /* line-height: .75; */
 
 }
 
@@ -162,4 +164,19 @@ nav {
 .navBar>li>a:hover {
     background-color: antiquewhite;
     color: #4D2314;
+}
+
+li.dayofWeek {
+    font-weight: bold;
+    padding: 8px;
+}
+
+a.meal {
+    color: antiquewhite;
+    font-size: 2.5vw;
+}
+
+a.meal:hover {
+    color: #919978;
+    font-size: 2.8vw;
 }
