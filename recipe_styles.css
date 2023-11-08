@@ -46,6 +46,7 @@ main>h1 {
     /* line-height: 1.0; */
     flex-direction: column;
     justify-content: space-between;
+    align-content: center;
     background-color: #E9E0B7;
 }
 
@@ -61,8 +62,6 @@ main>h1 {
 .recipeImg {
     height: 150px;
     padding: 5px;
-    /* align-items: flex-end; */
-    align-self: flex-end;
 }
 
 .categoryList>li>a:hover {
