@@ -32,9 +32,10 @@ main>h1 {
 .fa {
     padding: 20px;
     font-size: 30px;
-    width: 50px;
+    width: 56px;
     text-align: center;
     text-decoration: none;
+    align-content: center;
 }
 
 .fa:hover {
@@ -42,22 +43,22 @@ main>h1 {
 }
 
 .fa-facebook {
-    background: #46cae4;
+    background: #4D2314;
     color: white;
 }
 
 .fa-envelope {
-    background: #cd2b27;
+    background: #904110;
     color: white;
 }
 
 .fa-instagram {
-    background: #f369a2;
+    background: #e1ac7a;
     color: white;
 }
 
 .fa-linkedin {
-    background: #00a7a2;
+    background: #919978;
     color: white;
 }
 
