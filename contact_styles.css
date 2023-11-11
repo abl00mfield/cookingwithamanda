@@ -31,8 +31,8 @@ main>h1 {
 
 .fa {
     padding: 20px;
-    font-size: 30px;
-    width: 56px;
+    /* font-size: 30px; */
+    /* width: 56px; */
     text-align: center;
     text-decoration: none;
     align-content: center;
@@ -66,4 +66,10 @@ main>h1 {
 .fa-github {
     background: #fd9333;
     color: white;
+}
+
+@media screen and (min-width: 750px) {
+    main>h1 {
+        font-size: 3vw;
+    }
 }
