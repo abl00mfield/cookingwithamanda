@@ -173,7 +173,7 @@ a.meal {
 
 a.meal:hover {
     color: #919978;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
 }
 
 @media screen and (min-width: 700px) {
@@ -247,7 +247,7 @@ a.meal:hover {
 
     a.meal:hover {
         color: #919978;
-        font-size: 2.8vw;
+        /* font-size: 2.8vw; */
     }
 }
 
@@ -327,6 +327,6 @@ a.meal:hover {
 
     a.meal:hover {
         color: #919978;
-        font-size: 2.8vw;
+        /* font-size: 2.8vw; */
     }
 }

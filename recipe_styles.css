@@ -10,10 +10,10 @@ main {
     grid-area: main;
     background-color: #95654b;
     height: auto;
-    padding: 25px;
+    padding: 20px;
     display: flex;
     /* font-size: 2rem; */
-    gap: 10px;
+    gap: 8px;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
@@ -22,7 +22,7 @@ main {
 main>h1 {
     text-align: center;
     font-family: 'Homemade Apple';
-    font-size: 2rem;
+    font-size: 1.8em;
     width: 100%;
     line-height: 1.7;
 }
@@ -77,6 +77,7 @@ a:hover.recipeCard {
 .recipeCard>h4 {
     font-size: 1.5em;
     font-weight: normal;
+    line-height: .95;
 }
 
 @media screen and (min-width: 700px) {
