@@ -6,9 +6,6 @@
     list-style-type: none;
 }
 
-
-
-
 body {
     display: grid;
     grid-template-areas:
@@ -20,6 +17,7 @@ body {
     grid-template-rows: min-content 1fr min-content;
     height: 100vh;
 }
+
 
 header {
     grid-area: header;
@@ -52,12 +50,9 @@ header {
 
 }
 
-
-
 .headerLogo {
     width: 30%;
 }
-
 
 footer {
     padding: 5px;
@@ -181,7 +176,82 @@ a.meal:hover {
     font-size: 1.2em;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 700px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "nav   main   aside"
+            "footer footer footer";
+
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: min-content 1fr min-content;
+        height: 100vh;
+    }
+
+    main {
+        font-size: 3vw;
+    }
+
+    .headerImg {
+        width: 25%;
+    }
+
+    .logo {
+        font-size: 5.2vw;
+    }
+
+    .bottomText {
+        font-size: 2vw;
+    }
+
+    .headerLogo {
+        width: 25%;
+    }
+
+    .headerItem {
+        padding: 10px;
+    }
+
+
+
+    aside {
+        font-size: 5vw;
+        padding: 8px;
+    }
+
+    .weeklyMenu>li {
+        font-size: 4.5vw;
+        font-weight: normal;
+    }
+
+    a.meal {
+        color: antiquewhite;
+        font-size: 3.5vw;
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: #4D2314;
+        color: white;
+        font-size: 4vw;
+        padding: 20px;
+        /* position: relative; */
+        text-align: center;
+    }
+
+    .categoryCard>a {
+        text-transform: uppercase;
+        font-size: 3vw;
+    }
+
+    a.meal:hover {
+        color: #919978;
+        font-size: 2.8vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     main {
         font-size: 3vw;
     }

@@ -6,15 +6,6 @@
 }
 
 
-body {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "nav   main   aside"
-        "footer footer footer";
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
 main {
     grid-area: main;
     background-color: #95654b;
@@ -51,15 +42,8 @@ main>h1 {
 }
 
 a.recipeCard {
-
-    /* text-transform: uppercase; */
     font-size: 1.5em;
 
-}
-
-.recipeCard>a {
-    /* text-transform: uppercase; */
-    font-size: 1.5em;
 }
 
 a:hover.recipeCard {
@@ -90,7 +74,48 @@ a:hover.recipeCard {
 
 }
 
-@media screen and (min-width: 750px) {
+.recipeCard>h4 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 700px) {
+    main>h1 {
+        font-size: 5vw;
+    }
+
+    .categoryList>li {
+        font-size: 4.5vw;
+        font-weight: normal;
+
+    }
+
+    .categoryList>img {
+        width: 50%;
+
+    }
+
+    .recipeCard>h4 {
+        font-size: 3.5vw;
+        font-weight: normal;
+    }
+
+    .recipeCard {
+        text-align: center;
+        border: black solid 2px;
+        height: 250px;
+        width: 200px;
+        display: flex;
+        padding: 5px;
+        line-height: 1.0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        background-color: #E9E0B7;
+    }
+}
+
+@media screen and (min-width: 975px) {
     body {
         grid-template-columns: 15% 1fr 20%;
     }
@@ -113,35 +138,46 @@ a:hover.recipeCard {
 
     a.recipeCard {
         /* text-transform: uppercase; */
-        font-size: 2.2vw;
+        font-size: 2vw;
         font-weight: normal;
     }
 
     .recipeCard>h4 {
-        font-size: 2.2vw;
+        font-size: 2.8vw;
         font-weight: normal;
     }
 
+    .recipeCard {
+        text-align: center;
+        border: black solid 2px;
+        height: 250px;
+        width: 175px;
+        display: flex;
+        padding: 5px;
+        line-height: 1.0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        background-color: #E9E0B7;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .recipeCard>a {
+        /* text-transform: uppercase; */
+        font-size: 2vw;
+    }
+
+    .recipeCard>h4 {
+        font-size: 2vw;
+        font-weight: normal;
+    }
 
 }
 
-.recipeCard {
-    text-align: center;
-    border: black solid 2px;
-    height: 250px;
-    width: 175px;
-    display: flex;
-    padding: 5px;
-    line-height: 1.0;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    background-color: #E9E0B7;
-}
-
-
-
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1700px) {
     .recipeCard>a {
         /* text-transform: uppercase; */
         font-size: 1.75vw;
